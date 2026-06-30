@@ -36,8 +36,13 @@ main {
 
 
 .hero {
-    background: linear-gradient(rgba(255, 255, 255, 0.885), rgba(255, 255, 255, 0.616)), url('../../img/homepage_bg.png') no-repeat center center;
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.885), rgba(255, 255, 255, 0.886)),
+        url('../../img/cover/page_cover_photo.png') no-repeat center center;
+
     background-size: cover;
+    background-attachment: fixed; /* Makes the background stay fixed */
+
     color: #000000;
     min-height: 80vh;
 
@@ -48,6 +53,7 @@ main {
     text-align: center;
     padding: 40px 20px;
 }
+
 
 .hero-content {
     max-width: 1200px;
@@ -143,7 +149,7 @@ main {
 }
 
 .btn-secondary {
-    background: rgba(255,255,255,.8);
+    background: rgb(255, 255, 255);
     color: #111827;
     border: 1px solid #d1d5db;
 }
@@ -166,6 +172,10 @@ main {
 
     .tagline {
         font-size: 1rem;
+    }
+
+    .hero {
+        background-attachment: scroll;
     }
 
     .hero-content {
