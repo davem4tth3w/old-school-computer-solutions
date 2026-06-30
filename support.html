@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Request | Old School Computer Solutions</title>
+    <link rel="stylesheet" href="css/pages/support.css">
+</head>
+<body>
+
+    <main class="support-page">
+
+        <a href="index.html" class="back-btn">
+            ← Back to Home
+        </a>
+
+        <div class="support-card">
+
+            <p class="company-name">
+                Old School Computer Solutions
+            </p>
+
+            <h1>
+                Get Support
+            </h1>
+
+            <p class="support-intro">
+                Describe your issue and we'll get back to you as soon as possible.
+            </p>
+
+
+            <form class="support-form">
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="John Doe" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="john@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number (Optional)</label>
+                        <input type="tel" id="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject"
+                            placeholder="Example. Laptop won't turn on"
+                            required>
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Describe Your Issue</label>
+
+                    <textarea
+                        id="message"
+                        maxlength="1000"
+                        placeholder="Please provide as much detail as possible..."
+                        required></textarea>
+
+                    <div class="char-counter">
+                        Maximum 1000 characters
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-primary">
+                    Submit Request
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+</body>
+</html>

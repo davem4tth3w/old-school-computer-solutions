@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Old School Computer Solutions</title>
+
+    <link rel="stylesheet" href="css/pages/index.css">
+    <link rel="stylesheet" href="css/components/navbar.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+    <link rel="stylesheet" href="css/components/modal.css">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="navbar">
+        <img src="img/nav_logo.png" class="nav-logo" alt="Logo">
+
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+
+                <!-- Column 1 -->
+                <div class="hero-text">
+                    <p class="eyebrow">
+                        Old School Computer Solutions
+                    </p>
+
+                    <h1>
+                        IT Support &
+                        Computer Solutions
+                    </h1>
+
+                    <p class="hero-description">
+                        Helping homes and businesses succeed through dependable IT services, software development, and professional technology solutions.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=oldschoolcomputersolutions@gmail.com" class="btn-primary">
+                            Get Support
+                        </a>
+
+                        <a href="services.html" class="btn-secondary">
+                            View Services
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="hero-image">
+                    <img src="img/os_logo.png"
+                        alt="Logo"
+                        class="logo">
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+   <!-- Footer Section -->
+    <section class="footer-section">
+        
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h2>Contact</h2>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    oldschoolcomputersolutions@gmail.com
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    (815) 435-0028
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    304 Waldron Rd. Kankakee, IL 60901
+                </p>
+            </div>
+
+
+            <div class="footer-column">
+                <h2>Resources</h2>
+                <ul>
+                    <li>
+                        <a href="#"
+                        class="pdf-link"
+                        data-title="Terms of Service"
+                        data-pdf="documents/Old School Computer Solutions Terms of Service.pdf">
+                            Terms of Service
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                        class="pdf-link"
+                        data-title="Privacy Policy"
+                        data-pdf="documents/Old School Computer Solutions - Privacy Policy.pdf">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+        </div>
+
+        <footer class="footer-bottom">
+            <p>
+                <i class="fa-regular fa-copyright"></i>
+                2026 Old School Computer Solutions. All Rights Reserved.
+            </p>
+        </footer>
+    </section>
+
+    <div id="pdfModal" class="pdf-modal">
+
+        <div class="pdf-modal-content">
+
+            <div class="pdf-header">
+                <h2 id="pdfTitle">Document</h2>
+
+                <button id="closePdfModal">
+                    &times;
+                </button>
+            </div>
+
+            <iframe
+                id="pdfViewer"
+                src=""
+                width="100%"
+                height="700">
+            </iframe>
+
+        </div>
+
+    </div>
+    <!-- End of footer section -->
+
+</body>
+</html>
+
+<script src="js/pdf-modal.js"></script>
+<script src="js/navbar.js"></script>
