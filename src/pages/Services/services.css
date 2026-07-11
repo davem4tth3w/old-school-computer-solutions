@@ -1,0 +1,257 @@
+/* =========================
+   VARIABLES
+========================= */
+:root {
+    --black: #0a0a0a;
+    --main-bg: #f8f8f8;
+    --white: #ffffff;
+
+    --header-color: #111111;
+    --accent: #22c59f;
+
+    --text-light: #666666;
+    --border-light: #eaeaea;
+
+    /* Text Sizes */
+    --fs-xs: 0.75rem;          /* 12px */
+    --fs-sm: 0.875rem;         /* 14px */
+    --fs-base: 1rem;           /* 16px */
+    --fs-lg: 1.125rem;         /* 18px */
+    --fs-xl: 1.25rem;          /* 20px */
+    --fs-2xl: 1.35rem;         /* h2 size */
+    --fs-3xl: 1.875rem;
+    --fs-4xl: 2.25rem;
+    --fs-display: clamp(2rem, 4vw, 3.2rem);   /* Main heading */
+}
+
+/* =========================
+   RESET
+========================= */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background: var(--main-bg);
+    color: var(--black);
+    font-family: "Inter", system-ui, sans-serif;
+}
+
+/* =========================
+   SERVICES SECTION
+========================= */
+.services-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 24px;
+}
+
+.service-catalog {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.service-catalog p {
+    margin-bottom: 1rem;
+    color: var(--text-light);
+}
+
+.service-catalog a {
+    color: var(--black);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.service-catalog a i {
+    transition: transform 0.2s ease;
+}
+
+.service-catalog a:hover {
+    color: var(--accent);
+}
+
+.service-catalog a:hover i {
+    transform: translateX(3px);
+}
+
+/* =========================
+   HEADER
+========================= */
+.services-section-header {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+
+.header-badge {
+    display: inline-block;
+    color: var(--accent);
+    background: var(--black);
+    padding: 8px 20px;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin-bottom: 1.5rem;
+}
+
+
+.services-section-header h1 {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 700;
+    line-height: 1.1;
+    max-width: 760px;
+    margin: 0 auto 20px;
+    color: var(--header-color);
+}
+
+.services-section-header p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--text-light);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* =========================
+   GRID
+========================= */
+/* Update grid for better three-card layout */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+/* =========================
+   CARD
+========================= */
+.service-card {
+    height: 100%;
+    background: var(--white);
+    border: 1px solid var(--border-light);
+    border-radius: 24px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    border-color: #d9d9d9;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   ICON
+========================= */
+.service-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    background: rgba(34, 197, 159, 0.08);
+    color: var(--accent);
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   CONTENT
+========================= */
+.service-card h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--header-color);
+}
+
+.service-card p {
+    color: var(--text-light);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+.service-features {
+    list-style: none;
+    margin-bottom: 32px;
+    flex-grow: 1;
+}
+
+.service-features li {
+    position: relative;
+    padding: 8px 0 8px 24px;
+    color: #444;
+    font-size: 0.95rem;
+}
+
+.service-features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 700;
+}
+
+/* =========================
+   BUTTONS (Unified & Consistent)
+========================= */
+.service-card .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 32px;
+    border-radius: 9999px;
+    font-weight: 600;
+    font-size: 1.05rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: auto;
+    align-self: flex-start;
+    cursor: pointer;
+    border: none;
+}
+
+/* Primary Button*/
+.service-card .btn-primary {
+    background: var(--black);
+    color: white;
+}
+
+.service-card .btn-primary:hover {
+    background: #222;
+    transform: translateX(4px);
+}
+
+
+/* Arrow animation */
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+    .services-section {
+        padding: 64px 20px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        padding: 32px;
+    }
+
+    .services-section-header {
+        margin-bottom: 48px;
+    }
+}
+
