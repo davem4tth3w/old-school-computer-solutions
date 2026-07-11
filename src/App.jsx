@@ -7,7 +7,7 @@ import AboutPage from "./pages/About/about";
 import ContactPage from "./pages/Contact/contact";
 import ResidentialServicesPage from "./pages/Residential_Services/residential-services";
 import CommercialServicesPage from "./pages/Commercial_Services/commercial-services";
-import ItManagedServicesPage from "./pages/It_Managed_Services/it-managed-services";
+import ItManagedServicesPage from "./pages/IT_Managed_Services/it-managed-services";
 
 function App() {
     return (
