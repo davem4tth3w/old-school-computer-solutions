@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Old School Computer Solutions</title>
+
+    <link rel="stylesheet" href="css/pages/services.css">
+    <link rel="stylesheet" href="css/components/navbar.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+    <link rel="stylesheet" href="css/components/modal.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <img src="img/nav_logo.png" class="nav-logo" alt="Logo">
+
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <main>
+        <section class="services-section">
+            <div class="section-header">
+                <span class="badge">OUR SERVICES</span>
+                <h1>Technology solutions for homes and businesses</h1>
+                <p>
+                    Reliable computer repair, business IT support,
+                    software development, and accounting solutions.
+                </p>
+            </div>
+        
+            <!-- Single unified grid with all three cards -->
+            <div class="services-grid">
+                <!-- Residential -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-house"></i></div>
+                    <h2>Residential Services</h2>
+                    <p>Home computer repair and support.</p>
+                
+                    <ul class="service-features">
+                        <li>On-Site Services</li>
+                        <li>Pickup & Drop-Off</li>
+                        <li>Remote Support</li>
+                    </ul>
+                
+                    <a href="residential-services.html" class="btn btn-primary">
+                        Explore Services
+                        <span class="arrow">→</span>
+                    </a>
+                </div>
+
+                <!-- Commercial -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-briefcase"></i></div>
+                    <h2>Commercial Services</h2>
+                    <p>Business technology and support.</p>
+                
+                    <ul class="service-features">
+                        <li>IT Services</li>
+                        <li>Accounting Services</li>
+                        <li>Business Services</li>
+                    </ul>
+                
+                    <a href="commercial-services.html" class="btn btn-primary">
+                        Explore Services
+                        <span class="arrow">→</span>
+                    </a>
+                </div>
+
+                <!-- IT Managed Services -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-computer"></i></div>
+                    <h2>IT Managed Services</h2>
+                    <p>For businesses needing proactive monitoring and ongoing IT management.</p>
+                
+                    <ul class="service-features">
+                        <li>24/7 Monitoring</li>
+                        <li>Patch Management</li>
+                        <li>Backup Monitoring</li>
+                        <li>Firewall Management</li>
+                        <li>Vendor Coordination</li>
+                        <!-- Add more as needed -->
+                    </ul>
+                
+                    <a href="it-managed-services.html" class="btn btn-primary">
+                        Explore Services
+                        <span class="arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="service-catalog">
+                <p>Need a complete overview of our services?</p>
+                <a href="#"
+                class="btn btn-secondary pdf-link"
+                data-title="Old School Computer Solutions Service List"
+                data-pdf="documents/Old School Computer Solutions - Service List - 2026.pdf">
+                    View Service List <i class="fa-solid fa-file-pdf"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer Section -->
+    <section class="footer-section">
+        
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h2>Contact</h2>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    oldschoolcomputersolutions@gmail.com
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    (815) 435-0028
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    304 Waldron Rd. Kankakee, IL 60901
+                </p>
+            </div>
+
+
+            <div class="footer-column">
+                <h2>Resources</h2>
+                <ul>
+                    <li>
+                        <a href="#"
+                        class="pdf-link"
+                        data-title="Terms of Service"
+                        data-pdf="documents/Old School Computer Solutions Terms of Service.pdf">
+                            Terms of Service
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                        class="pdf-link"
+                        data-title="Privacy Policy"
+                        data-pdf="documents/Old School Computer Solutions - Privacy Policy.pdf">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+        </div>
+
+        <footer class="footer-bottom">
+            <p>
+                <i class="fa-regular fa-copyright"></i>
+                2026 Old School Computer Solutions. All Rights Reserved.
+            </p>
+        </footer>
+    </section>
+
+    <div id="pdfModal" class="pdf-modal">
+
+        <div class="pdf-modal-content">
+
+            <div class="pdf-header">
+                <h2 id="pdfTitle">Document</h2>
+
+                <button id="closePdfModal">
+                    &times;
+                </button>
+            </div>
+
+            <iframe
+                id="pdfViewer"
+                src=""
+                width="100%"
+                height="700">
+            </iframe>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+<script src="js/pdf-modal.js"></script>
+<script src="js/navbar.js"></script>
