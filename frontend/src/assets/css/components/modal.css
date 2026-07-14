@@ -1,0 +1,58 @@
+/* PDF Modal Styles */
+.pdf-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 9999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pdf-modal-content {
+    width: 90%;
+    max-width: 1100px;
+    height: 90vh;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.pdf-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+#closePdfModal {
+    border: none;
+    background: none;
+
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.pdf-viewer {
+    flex: 1;
+    width: 100%;
+    border: none;
+}
+
+button {
+    text-decoration: none;
+    background: none;
+    border: none;
+    padding: 8px;
+    font-size: 20px;
+}
+
+.pdf-header h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
